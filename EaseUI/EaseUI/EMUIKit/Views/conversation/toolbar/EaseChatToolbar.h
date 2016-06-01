@@ -1,10 +1,15 @@
-//
-//  EaseChatToolbar.h
-//  ChatDemo-UI3.0
-//
-//  Created by dhc on 15/7/1.
-//  Copyright (c) 2015年 easemob.com. All rights reserved.
-//
+/************************************************************
+ *  * Hyphenate CONFIDENTIAL
+ * __________________
+ * Copyright (C) 2016 Hyphenate Inc. All rights reserved.
+ *
+ * NOTICE: All information contained herein is, and remains
+ * the property of Hyphenate Inc.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Hyphenate Inc.
+ */
+
 
 #import <UIKit/UIKit.h>
 
@@ -14,8 +19,8 @@
 #import "EaseChatBarMoreView.h"
 #import "EaseChatToolbarItem.h"
 
-#define kTouchToRecord NSLocalizedString(@"message.toolBar.record.touch", @"hold down to talk")
-#define kTouchToFinish NSLocalizedString(@"message.toolBar.record.send", @"loosen to send")
+#define kTouchToRecord NSEaseLocalizedString(@"message.toolBar.record.touch", @"hold down to talk")
+#define kTouchToFinish NSEaseLocalizedString(@"message.toolBar.record.send", @"loosen to send")
 
 
 
@@ -95,6 +100,11 @@
  *  取消触摸录音键
  */
 - (void)cancelTouchRecord;
+
+/*
+ *  弹起底层视图
+ */
+- (void)willShowBottomView:(UIView *)bottomView;
 
 @end
 
